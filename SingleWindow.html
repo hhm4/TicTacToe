@@ -1,0 +1,44 @@
+<html ng-app="header">
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.16/angular.js"></script>
+<script src="SingleWindow.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.10.0/ui-bootstrap-tpls.js"></script>
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.mir.css"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" >
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="SingleWindow.css">
+<head>
+<title>Single Window Mode</title>
+</head>
+
+<body >
+	<div ng-controller="headerControl" align="center">
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		{{heading}}
+		<br>
+		{{userName}}
+		<br>
+		{{imgURL['tb11']}}
+		<br>
+	<table id="gameTiles">
+		<tr>
+			<td><button id="tb11" class="Tile btn btn-block" ng-style="{'background-image' : 'url('+imgURL[11]+'.png)'}" ng-click="checkBoard(11)" type="button"> </button></td>
+			<td><button id="tb12" class="Tile btn btn-block" ng-style="{'background-image' : 'url('+imgURL[12]+'.png)'}" ng-click="checkBoard(12)" type="button"> </button></td>
+			<td><button id="tb13" class="Tile btn btn-block" ng-style="{'background-image' : 'url('+imgURL[13]+'.png)'}" ng-click="checkBoard(13)" type="button"> </button></td>
+		</tr>
+		<tr><td><button id="tb21" class="Tile btn btn-block" ng-style="{'background-image' : 'url('+imgURL[21]+'.png)'}" ng-click="checkBoard(21)" type="button"> </button></td>
+			<td><button id="tb22" class="Tile btn btn-block" ng-style="{'background-image' : 'url('+imgURL[22]+'.png)'}" ng-click="checkBoard(22)" type="button"> </button></td>
+			<td><button id="tb23" class="Tile btn btn-block" ng-style="{'background-image' : 'url('+imgURL[23]+'.png)'}" ng-click="checkBoard(23)" type="button"> </button></td>
+		</tr>
+		<tr><td><button id="tb31" class="Tile btn btn-block" ng-style="{'background-image' : 'url('+imgURL[31]+'.png)'}" ng-click="checkBoard(31)" type="button"> </button></td>
+			<td><button id="tb32" class="Tile btn btn-block" ng-style="{'background-image' : 'url('+imgURL[32]+'.png)'}" ng-click="checkBoard(32)" type="button"> </button></td>
+			<td><button id="tb33" class="Tile btn btn-block" ng-style="{'background-image' : 'url('+imgURL[33]+'.png)'}" ng-click="checkBoard(33)" type="button"> </button></td>
+		</tr>
+	</table>
+</body>
+</html>
